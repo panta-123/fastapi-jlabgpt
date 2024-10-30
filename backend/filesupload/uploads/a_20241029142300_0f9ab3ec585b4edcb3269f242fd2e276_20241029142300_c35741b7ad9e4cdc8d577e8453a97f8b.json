@@ -1,0 +1,407 @@
+{
+  "access": {
+    "embargo": {
+      "active": false,
+      "reason": null
+    },
+    "files": "public",
+    "record": "public",
+    "status": "metadata-only"
+  },
+  "created": "2024-10-22T04:07:24.191071+00:00",
+  "custom_fields": {
+    "journal:journal": {
+      "issue": "",
+      "pages": "105102",
+      "title": "Review of Scientific Instruments",
+      "volume": "95"
+    },
+    "rdm:division": [
+      {
+        "id": "ENPH-EH-HA",
+        "title": {
+          "en": "Exp Nuclear Physics / Experimental Halls / Hall A"
+        }
+      }
+    ],
+    "rdm:expID": [
+      "1209019"
+    ],
+    "rdm:experiment_number": [
+      "E12-09-019"
+    ],
+    "rdm:full_division": "Exp Nuclear Physics / Experimental Halls / Hall A",
+    "rdm:jlab_number": "JLAB-PHY-24-4001",
+    "rdm:osti_number": "2472783",
+    "rdm:pubID": 20722
+  },
+  "deletion_status": {
+    "is_deleted": false,
+    "status": "P"
+  },
+  "files": {
+    "count": 0,
+    "enabled": false,
+    "entries": {},
+    "order": [],
+    "total_bytes": 0
+  },
+  "id": "n8ybs-4hc82",
+  "is_draft": false,
+  "is_published": true,
+  "links": {
+    "access": "https://jrdb.jlab.org/api/records/n8ybs-4hc82/access",
+    "access_grants": "https://jrdb.jlab.org/api/records/n8ybs-4hc82/access/grants",
+    "access_links": "https://jrdb.jlab.org/api/records/n8ybs-4hc82/access/links",
+    "access_request": "https://jrdb.jlab.org/api/records/n8ybs-4hc82/access/request",
+    "access_users": "https://jrdb.jlab.org/api/records/n8ybs-4hc82/access/users",
+    "archive": "https://jrdb.jlab.org/api/records/n8ybs-4hc82/files-archive",
+    "archive_media": "https://jrdb.jlab.org/api/records/n8ybs-4hc82/media-files-archive",
+    "communities": "https://jrdb.jlab.org/api/records/n8ybs-4hc82/communities",
+    "communities-suggestions": "https://jrdb.jlab.org/api/records/n8ybs-4hc82/communities-suggestions",
+    "draft": "https://jrdb.jlab.org/api/records/n8ybs-4hc82/draft",
+    "files": "https://jrdb.jlab.org/api/records/n8ybs-4hc82/files",
+    "latest": "https://jrdb.jlab.org/api/records/n8ybs-4hc82/versions/latest",
+    "latest_html": "https://jrdb.jlab.org/records/n8ybs-4hc82/latest",
+    "media_files": "https://jrdb.jlab.org/api/records/n8ybs-4hc82/media-files",
+    "parent": "https://jrdb.jlab.org/api/records/tdj3p-a9e34",
+    "parent_doi": "https://jrdb.jlab.org/doi/",
+    "parent_html": "https://jrdb.jlab.org/records/tdj3p-a9e34",
+    "requests": "https://jrdb.jlab.org/api/records/n8ybs-4hc82/requests",
+    "reserve_doi": "https://jrdb.jlab.org/api/records/n8ybs-4hc82/draft/pids/doi",
+    "self": "https://jrdb.jlab.org/api/records/n8ybs-4hc82",
+    "self_html": "https://jrdb.jlab.org/records/n8ybs-4hc82",
+    "self_iiif_manifest": "https://jrdb.jlab.org/api/iiif/record:n8ybs-4hc82/manifest",
+    "self_iiif_sequence": "https://jrdb.jlab.org/api/iiif/record:n8ybs-4hc82/sequence/default",
+    "versions": "https://jrdb.jlab.org/api/records/n8ybs-4hc82/versions"
+  },
+  "media_files": {
+    "count": 0,
+    "enabled": false,
+    "entries": {},
+    "order": [],
+    "total_bytes": 0
+  },
+  "metadata": {
+    "creators": [
+      {
+        "person_or_org": {
+          "family_name": "Wojtsekhowski",
+          "given_name": "Bogdan",
+          "name": "Wojtsekhowski, Bogdan",
+          "type": "personal"
+        },
+        "role": {
+          "id": "researcher",
+          "title": {
+            "de": "WissenschaftlerIn",
+            "en": "Researcher",
+            "sv": "Forskare"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "Christopher Newport University"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Brash",
+          "given_name": "Ed",
+          "name": "Brash, Ed",
+          "type": "personal"
+        },
+        "role": {
+          "id": "researcher",
+          "title": {
+            "de": "WissenschaftlerIn",
+            "en": "Researcher",
+            "sv": "Forskare"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "Carnegie Mellon University"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Franklin",
+          "given_name": "Gregg",
+          "name": "Franklin, Gregg",
+          "type": "personal"
+        },
+        "role": {
+          "id": "researcher",
+          "title": {
+            "de": "WissenschaftlerIn",
+            "en": "Researcher",
+            "sv": "Forskare"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "Christopher Newport University"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Rosso",
+          "given_name": "Angelo",
+          "name": "Rosso, Angelo",
+          "type": "personal"
+        },
+        "role": {
+          "id": "researcher",
+          "title": {
+            "de": "WissenschaftlerIn",
+            "en": "Researcher",
+            "sv": "Forskare"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "Saint Mary's University"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Sarty",
+          "given_name": "Adam",
+          "name": "Sarty, Adam",
+          "type": "personal"
+        },
+        "role": {
+          "id": "researcher",
+          "title": {
+            "de": "WissenschaftlerIn",
+            "en": "Researcher",
+            "sv": "Forskare"
+          }
+        }
+      },
+      {
+        "person_or_org": {
+          "family_name": "Shahinyan",
+          "given_name": "Albert",
+          "name": "Shahinyan, Albert",
+          "type": "personal"
+        },
+        "role": {
+          "id": "researcher",
+          "title": {
+            "de": "WissenschaftlerIn",
+            "en": "Researcher",
+            "sv": "Forskare"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "James Madison University"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Zimmerman",
+          "given_name": "Ethan",
+          "name": "Zimmerman, Ethan",
+          "type": "personal"
+        },
+        "role": {
+          "id": "researcher",
+          "title": {
+            "de": "WissenschaftlerIn",
+            "en": "Researcher",
+            "sv": "Forskare"
+          }
+        }
+      }
+    ],
+    "dates": [
+      {
+        "date": "2024-02-20",
+        "type": {
+          "id": "submitted",
+          "title": {
+            "de": "Eingereicht",
+            "en": "Submitted",
+            "sv": "Inskickad"
+          }
+        }
+      }
+    ],
+    "description": "A light guide is an essential part of many scintillator counters and light collection systems. There is large interest in an adiabatic light guide which has high light transmission while converting the area of the light source to the shape of the photo-detector. We propose a variation of the adiabatic light guide which avoids a 90o twist of the strips, reduces the length of the light pipe, and significantly cuts the cost of production.",
+    "identifiers": [
+      {
+        "identifier": "arXiv:2402.14142",
+        "scheme": "arxiv"
+      },
+      {
+        "identifier": "10.1063/5.0218512",
+        "scheme": "doi"
+      }
+    ],
+    "publication_date": "2024-10",
+    "related_identifiers": [
+      {
+        "identifier": "https://misportal.jlab.org/sti/publications/20722/attachments/13108/Adiabatic_Light_Guide_with_S_shape_Strips3.pdf",
+        "relation_type": {
+          "id": "isdocumentedby",
+          "title": {
+            "de": "Wird dokumentiert von",
+            "en": "Is documented by",
+            "sv": "\u00c4r dokumenterad av"
+          }
+        },
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://misportal.jlab.org/sti/publications/20722/attachments/5364/Adiabatic_Light_Guide_with_S_shape_Strips.pdf",
+        "relation_type": {
+          "id": "isdocumentedby",
+          "title": {
+            "de": "Wird dokumentiert von",
+            "en": "Is documented by",
+            "sv": "\u00c4r dokumenterad av"
+          }
+        },
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://misportal.jlab.org/sti/publications/20722/attachments/13109/2402.14142v2.pdf",
+        "relation_type": {
+          "id": "isdocumentedby",
+          "title": {
+            "de": "Wird dokumentiert von",
+            "en": "Is documented by",
+            "sv": "\u00c4r dokumenterad av"
+          }
+        },
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://misportal.jlab.org/sti/publications/20722",
+        "relation_type": {
+          "id": "isderivedfrom",
+          "title": {
+            "de": "Wird abgeleitet von",
+            "en": "Is derived from",
+            "sv": "H\u00e4rr\u00f6r fr\u00e5n"
+          }
+        },
+        "scheme": "url"
+      }
+    ],
+    "resource_type": {
+      "id": "publication-article",
+      "title": {
+        "de": "Zeitschriftenartikel",
+        "en": "Journal article",
+        "sv": "Tidskriftsartikel"
+      }
+    },
+    "rights": [
+      {
+        "description": {
+          "en": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited."
+        },
+        "icon": "cc-by-icon",
+        "id": "cc-by-4.0",
+        "props": {
+          "scheme": "spdx",
+          "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        "title": {
+          "en": "Creative Commons Attribution 4.0 International"
+        }
+      }
+    ],
+    "title": "Adiabatic Light Guide with S-shape Strips"
+  },
+  "parent": {
+    "access": {
+      "grants": [],
+      "links": [],
+      "owned_by": {
+        "user": "2"
+      },
+      "settings": {
+        "accept_conditions_text": null,
+        "allow_guest_requests": false,
+        "allow_user_requests": false,
+        "secret_link_expiration": 0
+      }
+    },
+    "communities": {
+      "default": "885153be-218a-4363-8738-148957319a77",
+      "entries": [
+        {
+          "access": {
+            "member_policy": "open",
+            "members_visibility": "public",
+            "record_policy": "open",
+            "review_policy": "closed",
+            "visibility": "public"
+          },
+          "children": {
+            "allow": false
+          },
+          "created": "2024-08-19T14:58:41.716474+00:00",
+          "custom_fields": {},
+          "deletion_status": {
+            "is_deleted": false,
+            "status": "P"
+          },
+          "id": "885153be-218a-4363-8738-148957319a77",
+          "links": {},
+          "metadata": {
+            "title": "PublicationDB"
+          },
+          "revision_id": 2,
+          "slug": "publicationdb",
+          "updated": "2024-08-19T14:58:41.828614+00:00"
+        }
+      ],
+      "ids": [
+        "885153be-218a-4363-8738-148957319a77"
+      ]
+    },
+    "id": "tdj3p-a9e34",
+    "pids": {}
+  },
+  "pids": {
+    "oai": {
+      "identifier": "oai:inveniordm.jlab.org:n8ybs-4hc82",
+      "provider": "oai"
+    }
+  },
+  "revision_id": 3,
+  "stats": {
+    "all_versions": {
+      "data_volume": 0.0,
+      "downloads": 0,
+      "unique_downloads": 0,
+      "unique_views": 2,
+      "views": 2
+    },
+    "this_version": {
+      "data_volume": 0.0,
+      "downloads": 0,
+      "unique_downloads": 0,
+      "unique_views": 2,
+      "views": 2
+    }
+  },
+  "status": "published",
+  "updated": "2024-10-22T04:07:24.326708+00:00",
+  "versions": {
+    "index": 1,
+    "is_latest": true,
+    "is_latest_draft": true
+  }
+}
