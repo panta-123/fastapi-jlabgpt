@@ -30,7 +30,7 @@ class Settings(BaseSettings):
     FRONTEND_HOST: str = "http://localhost:5173"
 
     BACKEND_CORS_ORIGINS: Annotated[list[AnyUrl] | str, BeforeValidator(parse_cors)] = (
-        []
+        ["http://localhost:8501"]
     )
 
     @computed_field  # type: ignore[prop-decorator]
@@ -57,6 +57,14 @@ class Settings(BaseSettings):
     # SSL paths
     SSL_CERT_FILE: str = "/Users/panta/jlabgpt/huggingface-chain.pem"
     REQUESTS_CA_BUNDLE: str = "/Users/panta/jlabgpt/huggingface-chain.pem"
+
+    # cilogon
+    CLIENT_ID:  Optional[str] = None
+    CLIENT_SECRET:  Optional[str] = None
+    REDIRECT_URI: Optional[str]  = None
+    CILOGON_AUTH_URL: Optional[str] = None
+    CILOGON_TOKEN_URL: Optional[str] = None
+    CILOGON_USERINFO_URL: Optional[str] = None
 
 
 

@@ -5,7 +5,7 @@ import time
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
-from app.celery_tasks import process_pdf
+from app.celery_tasks import process_markdown
 from app.core.config import settings
 
 logger = logging.getLogger(__name__)
@@ -22,8 +22,9 @@ class PDFHandler(FileSystemEventHandler):
             metadata_path = os.path.join(metadata_path, metafname + '.json')
             print(f"Processing PDF: {pdf_path}")
             print(f"Processing metadata: {metadata_path}")
-            process_pdf.delay(pdf_path, metadata_path)
-            # chain_pdf_processing.delay(pdf_path, metadata_path)
+            #process_pdf.delay(pdf_path, metadata_path)
+            #start_pdf_processing.delay(pdf_path, metadata_path)
+            process_markdown.delay("/Users/panta/fastapi-jlabgpt/backend/filesupload/mds/a.md")
 
 def start_watchdog():
     event_handler = PDFHandler()

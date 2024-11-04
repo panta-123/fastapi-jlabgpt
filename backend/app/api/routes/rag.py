@@ -1,33 +1,33 @@
 import os
 
 from fastapi import APIRouter, File, HTTPException, UploadFile
-from pydantic import BaseModel
+from fastapi.responses import StreamingResponse
 
 from app.core.config import settings
 from app.utils import unique_filename
-
+from app.pipelines.retrive import retrival
+from app.models.rag import StreamRequest, UploadResponse, ChunkResponse
 router = APIRouter()
 
 
-class InputString(BaseModel):
-    """
-    A simple input model for a text string.
-    """
+#@router.post("/query")
+#async def query(query: str):
+#    """
+#    A simple query endpoint that converts the input text to uppercase.
+#    """
+#    # Example processing: Convert to uppercase
+#    out = retrival(query)
+#    return out
 
-    text: str
+@router.post("/stream")
+async def stream(query: str):
+    def generate():
+        for chunk in retrival(query):
+            yield chunk + "\n"
+    return  StreamingResponse(generate(), media_type="text/plain")
 
 
-@router.post("/query")
-async def query(input_string: InputString):
-    """
-    A simple query endpoint that converts the input text to uppercase.
-    """
-    # Example processing: Convert to uppercase
-    processed_text = input_string.text.upper()
-    return {"original_text": input_string.text, "processed_text": processed_text}
-
-
-@router.post("/uploadfile/")
+@router.post("/uploadfile/", response_model=UploadResponse)
 async def create_upload_file(
     file: UploadFile = File(
         description="A file to be stored into vectorDB as UploadFile"
@@ -69,11 +69,11 @@ async def create_upload_file(
         # Run PDF processing in the background
     #    background_tasks.add_task(process_pdf, pdf_path, model_lst, metadata_path)
 
-    return {
-        "filename": file.filename,
-        "metadata_filename": metadata.filename if metadata else None,
-        "status": "Uploaded successfully",
-    }
+    return UploadResponse(
+        filename=file.filename,
+        metadata_filename= metadata.filename if metadata else None,
+        status= "Uploaded successfully",
+    )
 
 
 """

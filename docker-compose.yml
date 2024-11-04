@@ -1,0 +1,65 @@
+version: "3"
+services:
+  nginx:
+      image: nginx:latest
+      ports:
+        - "80:80"
+        - "443:443"
+      volumes:
+        - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+        - ./nginx/ssl:/etc/nginx/ssl
+      depends_on:
+        - fastapi
+        - streamlit
+      restart: always
+
+  fastapi:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    image: fastapi
+    volumes:
+      - /Users/panta/fastapi-jlabgpt:/Users/panta/fastapi-jlabgpt
+    ports:
+      - "8012:8012"
+    env_file:
+      - .env
+
+  redis:
+    image: "bitnami/redis:5.0.4"
+    environment:
+      - REDIS_PASSWORD=password123
+    ports:
+      - "6379:6379"
+    volumes:
+      - "redis_data:/bitnami/redis/data"
+
+  celery_worker:
+    build:
+      context: .
+      dockerfile: ./compose/local/fastapi/Dockerfile
+    image: fastapi_celery
+    volumes:
+      - .:/app
+    command: "celery -A app.celery_tasks.celery worker -l info"
+    depends_on:
+      - redis
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    image: streamlit
+    ports:
+      - "8501:8501"
+
+  chromadb:
+    image: chromadb/chroma:0.5.13
+    volumes:
+      - ./chromadb:/chroma/chroma
+    environment:
+      - IS_PERSISTENT=TRUE
+      - PERSIST_DIRECTORY=/chroma/chroma # this is the default path, change it as needed
+      - ANONYMIZED_TELEMETRY=${ANONYMIZED_TELEMETRY:-TRUE}
+    ports:
+      - 8000:8000
